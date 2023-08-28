@@ -1,6 +1,5 @@
-sport_questions = {
-    "response_code": 0,
-    "results": [
+sport_questions = (
+    [
         {
             "category": "Sports",
             "type": "multiple",
@@ -94,4 +93,4 @@ sport_questions = {
             ],
         },
     ],
-}
+)
