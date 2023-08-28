@@ -1,3 +1,12 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+# LOGO
+
+
+# Question class
+class Question:
+    """
+    Create and initialise objects for the questions class
+    """
+
+    def __init__(self, question, correct_answer):
+        self.question = question
+        self.answer = correct_answer
