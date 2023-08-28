@@ -17,17 +17,6 @@ class Question:
 
 
 # 2. For loop to go over the  the list of trivia questions in the database
-array_of_questions = []
-"""
-The for loop will go over the questions in the database in trivia.py. For each question an object will be created and appended to the array of questions.
-"""
-for question in sport_questions:
-    question_1 = question[0]["question"]
-    question_correct_answer = question[0]["correct_answer"]
-    add_question = Question(question_1, question_correct_answer)
-    array_of_questions.append(add_question)
-
-print(array_of_questions)
 
 
 # 3. Class that prints and runs the questions
@@ -42,4 +31,19 @@ class TriviaFunction:
 
     def next_question(self):
         current_q = self.list_of_questions[self.number_of_question]
+        self.number_of_question += 1
         input(f"Question {self.number_of_question}: {current_q.question} (A/B/C): ")
+
+
+array_of_questions = []
+"""
+The for loop will go over the questions in the database in trivia.py. For each question an object will be created and appended to the array of questions.
+"""
+for question in sport_questions:
+    question_1 = question[0]["question"]
+    question_correct_answer = question[0]["correct_answer"]
+    add_question = Question(question_1, question_correct_answer)
+    array_of_questions.append(add_question)
+
+print(array_of_questions)
+Trivia = TriviaFunction(array_of_questions)
