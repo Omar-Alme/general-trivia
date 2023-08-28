@@ -32,10 +32,14 @@ print(array_of_questions)
 
 # 3. Class that prints and runs the questions
 class TriviaFunction:
+    def __init__(self, list):
+        self.number_of_question = 0
+        self.list_of_questions = list
+
     """
     Retrieves question number from the list. Inputs the question and asks user for the answer.
     """
 
-    def __init__(self, list):
-        self.number_of_question = 0
-        self.list_of_questions = list
+    def next_question(self):
+        current_q = self.list_of_questions[self.number_of_question]
+        input(f"Question {self.number_of_question}: {current_q.question} (A/B/C): ")
