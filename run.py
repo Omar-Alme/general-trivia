@@ -24,7 +24,18 @@ The for loop will go over the questions in the database in trivia.py. For each q
 for question in sport_questions:
     question_1 = question[0]["question"]
     question_correct_answer = question[0]["correct_answer"]
-    next_question = Question(question_1, question_correct_answer)
-    array_of_questions.append(next_question)
+    add_question = Question(question_1, question_correct_answer)
+    array_of_questions.append(add_question)
 
 print(array_of_questions)
+
+
+# 3. Class that prints and runs the questions
+class TriviaFunction:
+    """
+    Retrieves question number from the list. Inputs the question and asks user for the answer.
+    """
+
+    def __init__(self, list):
+        self.number_of_question = 0
+        self.list_of_questions = list
