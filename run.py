@@ -16,23 +16,21 @@ class Question:
 # print(first_question.question)
 
 
-# 2. For loop to go over the  the list of trivia questions in the database
-
-
 # 3. Class that prints and runs the questions
 class TriviaFunction:
     def __init__(self, list):
         self.number_of_question = 0
         self.list_of_questions = list
 
-    """
-    Retrieves question number from the list. Inputs the question and asks user for the answer.
-    """
-
     def next_question(self):
+        """
+        Retrieves question number from the list. Inputs the question and asks user for the answer.
+        """
         current_q = self.list_of_questions[self.number_of_question]
         self.number_of_question += 1
-        input(f"Question {self.number_of_question}: {current_q.question} (A/B/C): ")
+        input(
+            f"Question {self.number_of_question}: {current_q.question}(Select letter):\n  "
+        )
 
 
 array_of_questions = []
@@ -45,5 +43,6 @@ for question in sport_questions:
     add_question = Question(question_1, question_correct_answer)
     array_of_questions.append(add_question)
 
-print(array_of_questions)
-Trivia = TriviaFunction(array_of_questions)
+# print(array_of_questions)
+trivia = TriviaFunction(array_of_questions)
+trivia.next_question()
