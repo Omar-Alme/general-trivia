@@ -22,8 +22,9 @@ array_of_questions = []
 The for loop will go over the questions in the database in trivia.py. For each question an object will be created and appended to the array of questions.
 """
 for question in sport_questions:
-    question_1 = question["question"]
-    question_correct_answer = question["correct_answer"]
-    next_question = Question(
-        the_question=question_1, correct_answer=question_correct_answer
-    )
+    question_1 = question[0]["question"]
+    question_correct_answer = question[0]["correct_answer"]
+    next_question = Question(question_1, question_correct_answer)
+    array_of_questions.append(next_question)
+
+print(array_of_questions)
