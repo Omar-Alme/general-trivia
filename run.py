@@ -32,6 +32,15 @@ class TriviaFunction:
             f"Question {self.number_of_question}: {current_q.question}(Select letter):\n  "
         )
 
+    def is_questions_remaining(self):
+        """
+        Checks if there are still remaining questions in the trivia.
+        """
+        if self.number_of_question < len(self.list_of_questions):
+            return True
+        else:
+            False
+
 
 array_of_questions = []
 """
@@ -45,4 +54,6 @@ for question in sport_questions:
 
 # print(array_of_questions)
 trivia = TriviaFunction(array_of_questions)
+
+while trivia.is_questions_remaining():
 trivia.next_question()
