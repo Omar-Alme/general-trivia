@@ -25,7 +25,7 @@ class TriviaFunction:
         """
         current_q = self.list_of_questions[self.number_of_question]
         self.number_of_question += 1
-        users_input. = input(
+        users_input = input(
             f"Q {self.number_of_question}: {current_q.question}(True/False):"
         )
         print("\n")
@@ -64,11 +64,10 @@ array_of_questions = []
 The for loop will go over the questions in the database in trivia.py. For each
 question an object will be created and appended to the array of questions.
 """
-# i = 0
+
 for question in general_questions:
     question_1 = question["question"]
     question_correct_answer = question["correct_answer"]
-    # i += 1
     add_question = Question(question_1, question_correct_answer)
     array_of_questions.append(add_question)
 
