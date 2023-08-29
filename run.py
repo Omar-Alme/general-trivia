@@ -28,27 +28,33 @@ class TriviaFunction:
         """
         current_q = self.list_of_questions[self.number_of_question]
         self.number_of_question += 1
-        input(
+        users_input = input(
             f"Question {self.number_of_question}: {current_q.question}(Select letter):\n  "
         )
+        self.answer_check(users_input, current_q.answer)
 
     def is_questions_remaining(self):
         """
-        Checks if there are still remaining questions in the trivia.
+        Checks if there are still remaining questions in the trivia. Keeps checking until all the questions have been printed.
         """
         if self.number_of_question < len(self.list_of_questions):
             return True
         else:
             False
 
+    def answer_check(self):
+
+
 
 array_of_questions = []
 """
 The for loop will go over the questions in the database in trivia.py. For each question an object will be created and appended to the array of questions.
 """
+# i = 0
 for question in sport_questions:
-    question_1 = question[0]["question"]
-    question_correct_answer = question[0]["correct_answer"]
+    question_1 = question["question"]
+    question_correct_answer = question["correct_answer"]
+    # i += 1
     add_question = Question(question_1, question_correct_answer)
     array_of_questions.append(add_question)
 
@@ -56,4 +62,4 @@ for question in sport_questions:
 trivia = TriviaFunction(array_of_questions)
 
 while trivia.is_questions_remaining():
-trivia.next_question()
+    trivia.next_question()
