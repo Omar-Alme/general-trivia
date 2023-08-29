@@ -1,4 +1,4 @@
-sport_questions = [
+general_questions = [
     {
         "category": "Sports",
         "type": "multiple",
