@@ -79,7 +79,7 @@ trivia = TriviaFunction(array_of_questions)
 while trivia.is_questions_remaining():
     trivia.next_question()
 
-print("Well Done on finishing Sports Trivia!")
+print("Well Done on finishing General Trivia!")
 print("\n")
 print(f"Your final score is {trivia.score}/{len(array_of_questions)}")
 print("\n")
