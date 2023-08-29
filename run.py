@@ -21,6 +21,7 @@ class TriviaFunction:
     def __init__(self, list):
         self.number_of_question = 0
         self.list_of_questions = list
+        self.score = 0
 
     def next_question(self):
         """
@@ -43,11 +44,14 @@ class TriviaFunction:
             False
 
     def answer_check(self, users_input, correct_answer):
+        """
+        Checks user input and compares it to correct answer from the object. If correct show correct answer text. If incorrect show incorrect answer as well as show what the correct answer is.
+        """
         if users_input == correct_answer:
             print("CORRECT ANSWER!")
         else:
             print("Better luck next time :(")
-            print(f"The correct answer is: {correct_answer}.")
+            print(f"The correct answer is: {correct_answer}.\n")
 
 
 array_of_questions = []
