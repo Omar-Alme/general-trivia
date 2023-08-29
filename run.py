@@ -25,7 +25,7 @@ class TriviaFunction:
         current_q = self.list_of_questions[self.number_of_question]
         self.number_of_question += 1
         users_input = input(
-            f"Question {self.number_of_question}: {current_q.question}(Select letter):  "
+            f"Question {self.number_of_question}: {current_q.question}(True or False):  "
         )
         print("\n")
         self.answer_check(users_input, current_q.answer)
