@@ -42,8 +42,12 @@ class TriviaFunction:
         else:
             False
 
-    def answer_check(self):
-
+    def answer_check(self, users_input, correct_answer):
+        if users_input == correct_answer:
+            print("CORRECT ANSWER!")
+        else:
+            print("Better luck next time :(")
+            print(f"The correct answer is: {correct_answer}.")
 
 
 array_of_questions = []
