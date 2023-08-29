@@ -54,6 +54,8 @@ class TriviaFunction:
             print("Better luck next time :(")
             print(f"The correct answer is: {correct_answer}.")
             print("\n")
+            print(f"Your total score is {self.score} out of {self.number_of_question}")
+            print("\n")
 
 
 array_of_questions = []
