@@ -28,7 +28,14 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 
 ### Bugs
 
+#### Solved bugs
+ - Diabled pylint so the application can run. And other files can be imported.
+
+All the bugs were fixed.
+
 ## Validator Testing
+
+![PEP8CI Python validator](documentation/python-validation.png)
 
 ## Deployment
  The program was deployed in Heroku.
