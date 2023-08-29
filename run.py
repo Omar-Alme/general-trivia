@@ -49,9 +49,11 @@ class TriviaFunction:
         """
         if users_input == correct_answer:
             print("CORRECT ANSWER!")
+            self.score += 1
         else:
             print("Better luck next time :(")
-            print(f"The correct answer is: {correct_answer}.\n")
+            print(f"The correct answer is: {correct_answer}.")
+            print("\n")
 
 
 array_of_questions = []
