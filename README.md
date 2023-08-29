@@ -14,7 +14,11 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 ## Technologies Used
  - [ASCII art generator](https://patorjk.com/software/taag/#p=testall&f=Graceful&t=Sport%20Trivia%20) was used to transform the text to ascii art for the terminal.
  - [Open Trivia Database](https://opentdb.com/) a free to use, user contributed trivia question database used to generate the API documentation for the quiz.
- - 
+ - [Python] is the programming language used.
+ - [VScode] Integrated development environement and rich text editor.
+ - [Heroku] is the clloud application platform used to create and host apps.
+ - [Github] for version control.
+ 
 ## Testing
 
 ### Manual Testing
