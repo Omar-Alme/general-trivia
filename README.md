@@ -23,6 +23,8 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 ## Deployment
 
 
-## Credits 
+## Credits
+  - [How to build a multiple Choice quiz in Python](https://www.youtube.com/watch?v=SgQhwtIoQ7o&list=PLLAZ4kZ9dFpMMs5lskzBApYXn0bl7emsW&index=33) 
+  - 
 
 ## Acknowledgment 
