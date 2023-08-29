@@ -50,7 +50,7 @@ class TriviaFunction:
         as well as show what the correct answer is.
         """
         if users_input.lower() == correct_answer.lower():
-            print("CORRECT ANSWER!")
+            print(" CORRECT ANSWER!")
             self.score += 1
         else:
             print(" WRONG ANSWER. Better luck next time.")
