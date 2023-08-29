@@ -26,9 +26,11 @@ class TriviaFunction:
         current_q = self.list_of_questions[self.number_of_question]
         self.number_of_question += 1
         users_input = input(
-            f"Q {self.number_of_question}: {current_q.question}(True/False):"
+            f" Q {self.number_of_question}: {current_q.question}(True/False):"
         )
         print("\n")
+        print("\n")
+
         self.answer_check(users_input, current_q.answer)
 
     def is_questions_remaining(self):
@@ -51,9 +53,9 @@ class TriviaFunction:
             print("CORRECT ANSWER!")
             self.score += 1
         else:
-            print("WRONG ANSWER. Better luck next time.")
-            print(f"The correct answer is: {correct_answer}.")
-        print(f"Your score is {self.score} out of {self.number_of_question}")
+            print(" WRONG ANSWER. Better luck next time.")
+            print(f" The correct answer is: {correct_answer}.")
+        print(f" Your score is {self.score} out of {self.number_of_question}")
         print("\n")
 
 
