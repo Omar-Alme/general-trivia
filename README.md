@@ -7,6 +7,9 @@ created using Objected orientated programming and python.
 
 There are 30 questions and the user is to input either "True" or "False"
 
+[Deployed Project](https://general-trivia-222519faad7b.herokuapp.com/)
+[Github Repo](https://github.com/Omar-Alme/general-trivia)
+
 ## Features
 
 The user inputs true or false for answer. .lower() feature is used so it doesn't matter if user inputs capital letters or lowercase. Prone to error.
