@@ -1,7 +1,7 @@
 from trivia import sport_questions
+from logo import logo
 
 
-# Question class
 class Question:
     """
     Create and initialise objects for the questions class.
@@ -12,11 +12,6 @@ class Question:
         self.answer = correct_answer
 
 
-# first_question = Question("What's your name?", "True")
-# print(first_question.question)
-
-
-# 3. Class that prints and runs the questions
 class TriviaFunction:
     def __init__(self, list):
         self.number_of_question = 0
@@ -30,8 +25,9 @@ class TriviaFunction:
         current_q = self.list_of_questions[self.number_of_question]
         self.number_of_question += 1
         users_input = input(
-            f"Question {self.number_of_question}: {current_q.question}(Select letter):\n  "
+            f"Question {self.number_of_question}: {current_q.question}(Select letter):  "
         )
+        print("\n")
         self.answer_check(users_input, current_q.answer)
 
     def is_questions_remaining(self):
@@ -47,16 +43,17 @@ class TriviaFunction:
         """
         Checks user input and compares it to correct answer from the object. If correct show correct answer text. If incorrect show incorrect answer as well as show what the correct answer is.
         """
-        if users_input == correct_answer:
+        if users_input.lower() == correct_answer.lower():
             print("CORRECT ANSWER!")
             self.score += 1
         else:
-            print("Better luck next time :(")
+            print("WRONG ANSWER. Better luck next time.")
             print(f"The correct answer is: {correct_answer}.")
-        print("\n")
         print(f"Your total score is {self.score} out of {self.number_of_question}")
         print("\n")
 
+
+print(logo)
 
 array_of_questions = []
 """
@@ -75,3 +72,8 @@ trivia = TriviaFunction(array_of_questions)
 
 while trivia.is_questions_remaining():
     trivia.next_question()
+
+print("Well Done on finishing Sports Trivia!")
+print("\n")
+print(f"Your final score is {trivia.score}/{len(array_of_questions)}")
+print("\n")
