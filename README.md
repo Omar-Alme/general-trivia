@@ -9,7 +9,17 @@ There are 30 questions and the user is to input either "True" or "False"
 
 ## Features
 
+The user inputs true or false for answer. .lower() feature is used so it doesn't matter if user inputs capital letters or lowercase. Prone to error.
 
+![Queston main](documentation/main.png)
+
+The question number goes up by 1. The correct answer is shown to user when they input the incorrect answer. Their current score is also shown to them after every question.
+
+![Answers](documentation/answers.png)
+
+Final score is shown to the user at the end of the trivia.
+
+![Score](documentation/score.png)
 
 
 ## Data model
