@@ -1,10 +1,15 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![logo](documentation/logo.png)
 
-Welcome USER_NAME,
+Welcome to General Trivia!
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. This is a General knowledge trivia quiz
+created using Objected orientated programming and python.
+
+There are 30 questions and the user is to input either "True" or "False"
 
 ## Features
+
+
 
 
 ## Data model
@@ -12,6 +17,7 @@ This is the Code Institute student template for deploying your third portfolio p
 The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
 ## Technologies Used
+
  - [ASCII art generator](https://patorjk.com/software/taag/#p=testall&f=Graceful&t=Sport%20Trivia%20) was used to transform the text to ascii art for the terminal.
  - [Open Trivia Database](https://opentdb.com/) a free to use, user contributed trivia question database used to generate the API documentation for the quiz.
  - [Python](https://www.python.org/) is the programming language used.
@@ -23,9 +29,6 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
  
  
 ## Testing
-
-### Manual Testing
-
 ### Bugs
 
 #### Solved bugs
@@ -33,7 +36,9 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 
 All the bugs were fixed.
 
-## Validator Testing
+### Validator Testing
+
+No errors were found when went through the python validator.
 
 ![PEP8CI Python validator](documentation/python-validation.png)
 
@@ -58,3 +63,5 @@ All the bugs were fixed.
   - [Python object oriented programming for beginners](https://www.youtube.com/watch?v=JeznW_7DlB0) tutorial by Tech with Tim helped understand concept of OOP.
   - [W3school](https://www.w3schools.com/python/gloss_python_class_init.asp) documentation for the initialisation function.
   - [TypeError](https://www.learndatasci.com/solutions/python-typeerror-list-indices-must-be-integers-or-slices-not-str/) helped fix a bug when picking data from dictionaries.
+  - StackOverflow was used to solve many problems when i was stuck.
+  - Credits to Tech with Tim as alot of code and snippets and concepts were taken from him. [Tech with Tim](https://www.youtube.com/c/TechWithTim), [more from him](https://www.techwithtim.net/)
