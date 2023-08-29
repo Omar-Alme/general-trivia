@@ -1,4 +1,4 @@
-from trivia import sport_questions
+from trivia import general_questions
 from logo import logo
 
 
@@ -60,14 +60,14 @@ array_of_questions = []
 The for loop will go over the questions in the database in trivia.py. For each question an object will be created and appended to the array of questions.
 """
 # i = 0
-for question in sport_questions:
+for question in general_questions:
     question_1 = question["question"]
     question_correct_answer = question["correct_answer"]
     # i += 1
     add_question = Question(question_1, question_correct_answer)
     array_of_questions.append(add_question)
 
-# print(array_of_questions)
+
 trivia = TriviaFunction(array_of_questions)
 
 while trivia.is_questions_remaining():
