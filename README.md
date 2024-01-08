@@ -2,7 +2,7 @@
 
 Welcome to General Trivia!
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. This is a General knowledge trivia quiz
+This is a General knowledge trivia quiz
 created using Objected orientated programming and python.
 
 There are 30 questions and the user is to input either "True" or "False"
